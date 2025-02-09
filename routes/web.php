@@ -37,4 +37,13 @@ Route::prefix('cart')->group(function () {
     Route::delete('/{id}', [CartController::class, 'destroy'])->name('cart.destroy');
 });
 
+
+Route::prefix('admin')->middleware('admin')->group(function () {
+    // Products
+    Route::resource('products', AdminProductController::class)->names('admin.products');
+    // Orders
+    Route::resource('orders', AdminOrderController::class)->names('admin.orders');
+    // Customers
+    Route::resource('customers', AdminCustomerController::class)->names('admin.customers');
+});
 require __DIR__.'/auth.php';

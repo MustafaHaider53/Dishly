@@ -12,7 +12,7 @@ class SocialiteController extends Controller
     // Redirect to Google
     public function redirectToGoogle()
     {
-        return Socialite::driver('google')->redirect();
+        return Socialite::driver('google')->stateless()->redirect();
     }
 
     // Handle Google callback
@@ -33,6 +33,9 @@ class SocialiteController extends Controller
 
         return redirect('/');
     }
+
+
+    
 
     // Repeat for Facebook
  

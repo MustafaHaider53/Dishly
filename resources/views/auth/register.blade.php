@@ -58,8 +58,8 @@
                 <div class="mt-6 grid grid-cols-2 gap-3">
                     <a href="{{ route('login.google') }}"
                         class="w-full flex items-center justify-center px-4 py-2 border border-gray-300 rounded-lg bg-white hover:bg-gray-50">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
-                            class="h-5 w-5" alt="Google">
+                        <img src="https://www.google.com/favicon.ico" class="h-5 w-5" alt="Google">
+                            
                     </a>
                     
                 </div>

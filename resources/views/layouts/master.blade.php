@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dishly - Online Restaurant</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    
     <style>
         @keyframes fadeIn {
             from { opacity: 0; }
